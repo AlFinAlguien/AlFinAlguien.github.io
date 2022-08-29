@@ -9,18 +9,24 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Titulo de pagina</title>
+    <title>QueMiraSapo</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Theme CSS -->
     <link href="css/freelancer.min.css" rel="stylesheet">
-
+    <!--CALCULADORA CSS-->
+    <link href="calculadora/calculadora.css" rel="stylesheet">
+    <!--PAINT-->
+    <link href="paint/paint.css" rel="stylesheet">
+>
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -41,7 +47,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="#page-top">Yourname</a>
+                <a class="navbar-brand" href="#page-top">QueMiraSapo</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -51,7 +57,7 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">                    <!--esto es para el menu, y que al seleccionarlo lo lleve a ese punto de la pagina -->
-                        <a href="#portfolio">Portfolio</a>
+                        <a href="#portfolio">Portafolio</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#about">About</a>
@@ -70,65 +76,71 @@
                 <div class="col-lg-12">
                     <img class="img-responsive" src="img/profile.png" alt=""> <!--imagen de perfil-->
                     <div class="intro-text">
-                        <span class="name">Hey there! I am Andres!</span>
+                        <span class="name">¡Hola! Soy Andres</span>
                         <hr class="star-light">
-                        <span class="skills">Add your skills here. Eg: <br/> Web Developer - Graphic Artist</span>
+                        <span class="skills">Estudiante de Ingeniería Física <br/> Programador Aficionado - etc.</span>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Portfolio Grid Section -->
+    <!-- Portfolio Grid Section --><!--si le agrego la clase class="success" se obtiene el estilo de about -->
     <section id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
+                    <h2>Portafolio</h2>
                     <hr class="star-primary">
                 </div>
-            </div>
-            <div class="row">
+            </div> <!--"portafolio"-->
+            <div class="row"> <!--imagenes del portafolio-->
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <p><b>Calculadora:</b></p>
+                    <a href="#portfolioCalculadora" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/cabin.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/calculadora.png" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                  <p><b>"Paint":</b></p>
+                    <a href="#portfolioPaint" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/cake.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/paint.png" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                    <p><b>Ec. cuadrática:</b></p>
+                    <a href="#portfolioCuadratica" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/circus.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/cuadratica.png" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                    <p><b>Calculadora Estadística:</b></p>
+                    <a href="#portfolioEstadistica" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/game.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/estadistica.png" class="img-responsive" alt="">
                     </a>
                 </div>
+                <!--
+                habian otros 2
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -149,6 +161,7 @@
                         <img src="img/portfolio/submarine.png" class="img-responsive" alt="">
                     </a>
                 </div>
+                -->
             </div>
         </div>
     </section>
@@ -164,10 +177,10 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p>Write a paragraph about who you are, where you're from, etc.</p>
+                    <p>La creación de esta página web se dió por un reto que me propuse en parte de mis vaciones, pero de la cual busco sea util al agregar aplicaciones como las del portafolio. Especialmente para estudiantes de ingeniería.</p>
                 </div>
                 <div class="col-lg-4">
-                    <p>Write a short paragraph about your hobbies and interests.</p>
+                    <p>Si tienes ideas utiles para implementar, de las que digas: "nah, qué pereza calcular eso"(en lo posible faciles de programar), contactame :).</p>
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <!-- <a href="#" class="btn btn-lg btn-outline">
@@ -186,33 +199,36 @@
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>Your hostel address line 1
-                            <br>Your hostel address line 2</p>
+                        <h3>Locaci&oacute;n</h3> <!--&oacute; es ó-->
+                        <p>Colombia</p>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
+                        <h3>Redes sociales</h3>
                         <ul class="list-inline">
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                                <a href="https://www.facebook.com/xXque.mira.sapoXx" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                                <a href="https://www.instagram.com/al_fin_alguien_/" class="btn-social btn-outline"><i class="fa fa-fw fa-instagram"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                                <a href="https://twitter.com/Andres_XkarmanX" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
                             </li>
+<!--
+el de twitter antes tenia fa-google-plus
                             <li>
                                 <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
                             </li>
                             <li>
                                 <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
                             </li>
+-->
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>Yourname</h3>
-                        <p><a href="http://startbootstrap.com">Yourname</a>.</p>
+                        <h3>Correo</h3>
+                        <p>framirezmwork@gmail.com</p>
+<!--                        <p><a href="http://startbootstrap.com">Yourname</a>.</p> -->
                     </div>
                 </div>
             </div>
@@ -221,7 +237,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; Your Website 2016
+                        Copyright &copy; QueMiraSapo.com 2022
                     </div>
                 </div>
             </div>
@@ -235,8 +251,9 @@
         </a>
     </div>
 
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Portfolio Modals --> <!--aca esta lo que aparece cuando se selecciona una imagen del portafolio-->
+
+    <div class="portfolio-modal modal fade" id="portfolioCalculadora" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -248,21 +265,45 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <h2>CALCULADORA</h2>
+                            </br>
+                            <div id="para-centrar-la-calculadora">
+                              <div class="calculadora">
+                                <div class="display">
+                                  <div id="valor-anterior"></div>
+                                  <div id="valor-actual"></div>
+                                </div>
+                                <button id="boton-calculadora" class="col-2" onclick="display.borrarTodo()">C</button>
+                                <button id="boton-calculadora" onclick="display.borrar()">&larr;</button>
+                                <button id="boton-calculadora" class="operador" value="dividir">/</button>
+                                <button id="boton-calculadora" class="numero">7</button>
+                                <button id="boton-calculadora" class="numero">8</button>
+                                <button id="boton-calculadora" class="numero">9</button>
+                                <button id="boton-calculadora" class="operador" value="multiplicar">X</button>
+                                <button id="boton-calculadora" class="numero">4</button>
+                                <button id="boton-calculadora" class="numero">5</button>
+                                <button id="boton-calculadora" class="numero">6</button>
+                                <button id="boton-calculadora" class="operador" value="restar">-</button>
+                                <button id="boton-calculadora" class="numero">1</button>
+                                <button id="boton-calculadora" class="numero">2</button>
+                                <button id="boton-calculadora" class="numero">3</button>
+                                <button id="boton-calculadora" class="operador" value="sumar">+</button>
+                                <button id="boton-calculadora" class="col-2 numero">0</button>
+                                <button id="boton-calculadora" class="numero">.</button>
+                                <button id="boton-calculadora" class="operador" value="igual">=</button>
+                              </div>
+                            </div>
                             <ul class="list-inline item-details">
                                 <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Yourname</a>
+                                    <strong><a href="https://www.eluniversal.com.mx/sites/default/files/u17566/4.jpeg">no entrar</a>
                                     </strong>
                                 </li>
                                 <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    <strong><a href="https://www.eluniversal.com.mx/sites/default/files/u17566/4.jpeg">no entrar</a>
                                     </strong>
                                 </li>
                                 <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    <strong><a href="https://www.eluniversal.com.mx/sites/default/files/u17566/4.jpeg">no entrar</a>
                                     </strong>
                                 </li>
                             </ul>
@@ -273,7 +314,7 @@
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioPaint" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -285,21 +326,47 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <h2>DIBUJO EN CANVAS</h2>
+                            <br/><br/>
+                            <canvas width="690" height="690" id="area_dibujo" style="border-width: 2px; border-color: black; border-style: solid;"></canvas>
+                            <div id="pseudo-header">
+                              <div>
+                                <ul class="list-inline">
+                                  <li>
+                                    <input type="button" class="boton-paint" value="Lapiz" id="boton_lapiz"/>
+                                  </li>
+                                  <li>
+                                    <input type="button" class="boton-paint" value="Borrador" id="boton_borrador"/> <br />
+                                  </li>
+                                  <br/>
+                                  <li>
+                                    <div class="texto"> Color:</div> <input type="color" id="color_linea"/> <br />
+                                  </li>
+                                  <li>
+                                    <div class="texto">Grueso de linea: </div> <input type="number" id="grueso_linea" /> <br />
+                                  </li>
+                                  <li>
+                                    <div class="texto"> Tamaño del borrador: </div> <input type="number" id="tamaño_borrador" /> <br />
+                                  </li>
+                                  <br/>
+                                  <li>
+                                    <input type="button" class="boton-paint" value="Limpiar Todo" id="limpiar_todo"/> <br />
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+
                             <ul class="list-inline item-details">
                                 <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Yourname</a>
+                                    <strong><a href="https://www.eluniversal.com.mx/sites/default/files/u17566/4.jpeg">no entrar</a>
                                     </strong>
                                 </li>
                                 <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    <strong><a href="https://www.eluniversal.com.mx/sites/default/files/u17566/4.jpeg">no entrar</a>
                                     </strong>
                                 </li>
                                 <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    <strong><a href="https://www.eluniversal.com.mx/sites/default/files/u17566/4.jpeg">no entrar</a>
                                     </strong>
                                 </li>
                             </ul>
@@ -310,7 +377,7 @@
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioCuadratica" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -322,21 +389,34 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>ECUACI&Oacute;N CUADR&aacute;TICA</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            Soluciones para una ecuaci&oacute;n de la forma ax^2 + bx + c = 0 <br/>
+                            Ingrese los valores: <br/><br/>
+
+                            a: <input type="text" id="a"></input>
+                            <br/>
+                            b: <input type="text" id="b"></input>
+                            <br/>
+                            c: <input type="text" id="c"></input>
+                            <br/>
+                            (tenga en cuenta el indicador decimal como ".")
+                            <br/><br/>
+                            <input type="button" id="boton" value="Calcular"></input>
+                            <br/><br/>
+                            <p id="solu">
+                            </p>
                             <ul class="list-inline item-details">
                                 <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Yourname</a>
+                                    <strong><a href="https://www.eluniversal.com.mx/sites/default/files/u17566/4.jpeg">no entrar</a>
                                     </strong>
                                 </li>
                                 <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    <strong><a href="https://www.eluniversal.com.mx/sites/default/files/u17566/4.jpeg">no entrar</a>
                                     </strong>
                                 </li>
                                 <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    <strong><a href="https://www.eluniversal.com.mx/sites/default/files/u17566/4.jpeg">no entrar</a>
                                     </strong>
                                 </li>
                             </ul>
@@ -347,7 +427,7 @@
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioEstadistica" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -359,21 +439,35 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <h2>CALCULADORA ESTADISTICA</h2>
+                            <p id="datosEti"></p>
+                            <br/>
+                            Ingresa cada dato y presione ENTER:
+                            <input type="text" id="dato"></input>
+                            <br/><br/>
+                            <p>
+                              <input type="button" id="desviacion" value="Desviación Estandar P."></input>
+                              <input type="button" id="promedio" value="Promedio"></input>
+                              <input type="button" id="moda" value="Moda"></input>
+                              <input type="button" id="max" value="Máximo"></input>
+                              <input type="button" id="min" value="Mínimo"></input>
+                            </p>
+                            <br/>
+                            <p><b>Resultado: </b></p>
+                            <p id="resultado"></p>
+                            <br/>
+                            <input type="button" id="nuevosDatos" value="Reiniciar"></input>
                             <ul class="list-inline item-details">
                                 <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Yourname</a>
+                                    <strong><a href="https://www.eluniversal.com.mx/sites/default/files/u17566/4.jpeg">no entrar</a>
                                     </strong>
                                 </li>
                                 <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    <strong><a href="https://www.eluniversal.com.mx/sites/default/files/u17566/4.jpeg">no entrar</a>
                                     </strong>
                                 </li>
                                 <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    <strong><a href="https://www.eluniversal.com.mx/sites/default/files/u17566/4.jpeg">no entrar</a>
                                     </strong>
                                 </li>
                             </ul>
@@ -384,6 +478,8 @@
             </div>
         </div>
     </div>
+  <!--
+    de los otros 2 que habian
     <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -458,7 +554,7 @@
             </div>
         </div>
     </div>
-
+-->
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 
@@ -471,6 +567,16 @@
     <!-- Theme JavaScript -->
     <script src="js/freelancer.min.js"></script>
 
+    <!--CALCULADORA JS-->
+    <script src="calculadora/display.js" type="text/javascript"></script>
+    <script src="calculadora/calculadora.js" type="text/javascript"></script>
+    <script src="calculadora/index.js" type="text/javascript" defer></script>
+    <!--PAINT-->
+    <script src="paint/paint.js"></script>
+    <!--CUADRATICA-->
+    <script src="cuadratica/cuadratica.js" type="text/javascript"></script>
+    <!--CALCULADORA ESTADISTICA-->
+    <script src="estadistica/estadistica.js" type="text/javascript"></script>
 </body>
 
 </html>
