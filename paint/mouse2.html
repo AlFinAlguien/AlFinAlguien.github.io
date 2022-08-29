@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>A dibujar!</title>
+    <link href="paint.css" rel="stylesheet">
+  </head>
+  <body>
+    <canvas width="500" height="500" id="area_dibujo"></canvas>
+    <div id="pseudo-heder">
+      <ul class="row">
+        <li>
+          <input type="button" class="boton-paint" value="Lapiz" id="boton_lapiz"/>
+        </li>
+        <li>
+          <input type="button" class="boton-paint" value="Borrador" id="boton_borrador"/> <br />
+        </li>
+        <li>
+          Color: <input type="color" id="color_linea"/> <br />
+        </li>
+        <li>
+          Grueso de linea: <input type="number" id="grueso_linea" /> <br />
+        </li>
+        <li>
+          Tamaño del borrador: <input type="number" id="tamaño_borrador" /> <br />
+        </li>
+        <li>
+          <input type="button" class="boton-paint" value="Limpiar Todo" id="limpiar_todo"/> <br />
+        </li>
+      </ul>
+    </div>
+    <script src="paint.js"></script>
+  </body>
+</html>

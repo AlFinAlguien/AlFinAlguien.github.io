@@ -1,0 +1,33 @@
+.boton-paint {
+  background: #00916e;
+  box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #00ffc11f;
+  font-size: 1.5em;
+  padding: 0px 10px;
+  border-radius: 0px;
+  margin: 5px 15px;
+  text-decoration: none;
+  cursor: pointer;
+  color:white;
+}
+.boton-paint:active {
+    background-color: #006f54;
+}/*cada vez que hagamos foco(dar click) con el mouse un ambio de color*/
+
+.boton-paint:focus {
+    outline: none;/*para quitar el recuedro por defecto que hace al dar click sobre los botones*/
+}
+.texto{
+  color: white;
+}
+#pseudo-header {
+  background: #363636;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*para que el div de adentro quede centrado*/
+  display: flex;
+  justify-content: center;
+}
